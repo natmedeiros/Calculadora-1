@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Martel:wght@600&family=Playfair+Display:ital@0;1&display=swap');
+/*font-family: 'Martel', serif;*/
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(175, 247, 252);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.layout {
+    width: 160px;
+    height: 220px;
+    background: linear-gradient(rgb(119, 252, 252), rgb(148, 241, 210));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.calculator {
+    margin-left: 4.5px;
+}
+
+input {
+    font-family: 'Martel', serif;
+    margin: 2px 1px;
+    padding: 2px;
+}
+
+.display {
+    width: 130px;
+    height: 30px;
+    margin-right: 5px;
+    border-radius: 1cap;
+    border-color: #00ecfd;
+    background-color: #cafdff;
+    cursor: pointer;
+    text-align: right;
+    font-size: 12px;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.buttons > input {
+    margin-top: 3px;
+    color: white;
+    background: linear-gradient(rgb(128, 247, 207), rgb(90, 248, 248));
+    border:solid 1px;
+    border-radius: 2cap;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.buttons > input:hover {
+    background: #9bf7ef;
+}
+
+.buttons > input:active {
+    background: linear-gradient(rgb(119, 252, 252), rgb(148, 241, 210));
+    box-shadow: none;
+}
+
+.clean {
+    width: 66px;
+}
+
+.num {
+    width: 30px;
+}
+
+.operat {
+    width: 30px;
+}
+
+.operat1 {
+    width: 66px;
+}
+
+.clean1 {
+    width: 30px;
+}
