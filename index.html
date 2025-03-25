@@ -8,55 +8,52 @@
 </head>
 <body>
 
-    <!-- Projeto feito a partir do video do youtube: 
-    https://youtu.be/ATd9r0BQ9lI?si=fXIQcMUaHygTk5Yd -->
-
     <div class="layout">
         <form action="" name="calculator">
 
-                <input type="text" class="display" name="display"  placeholder="0" disabled></br>
+                <input type="text" class="display" id="display"  placeholder="0" disabled></br>
 
             <div class="buttons">
-                <input type="reset" class="clean" name="btnCE" value="CE" 
-                onclick="displaynum(btnCE.value)">
-                <input type="reset" class="clean1" name="btnC" value="C"
-                onclick="displaynum(btnC.value)">
-                <input type="button"  class=" operat" name="btnDiv"value="/" 
-                onclick="displaynum(btnDiv.value)"></br>
+                <input type="button" class="clean" value="CE" 
+                onclick="clearDisplay(true)">
+                <input type="button" class="clean1" value="C"
+                onclick="clearDisplay(false)">
+                <input type="button"  class=" operat" value="÷" 
+                onclick="displaynum('÷')"></br>
             
-                <input type="button" class="num" name="btn7" value="7" 
-                onclick="displaynum(btn7.value)">
-                <input type="button" class="num" name="btn8" value="8" 
-                onclick="displaynum(btn8.value)">
-                <input type="button" class="num" name="btn9" value="9" 
-                onclick="displaynum(btn9.value)">
-                <input type="button" class="operat" name="btnMult" value="*" 
-                onclick="displaynum(btnMult.value)"></br>
+                <input type="button" class="num" value="7" 
+                onclick="displaynum('7')">
+                <input type="button" class="num" value="8" 
+                onclick="displaynum('8')">
+                <input type="button" class="num" value="9" 
+                onclick="displaynum('9')">
+                <input type="button" class="operat" value="x"
+                onclick="displaynum('x')"></br>
 
-                <input type="button"  class="num" name="btn4"value="4" 
-                onclick="displaynum(btn4.value)">
-                <input type="button" class="num" name="btn5" value="5" 
-                onclick="displaynum(btn5.value)">
-                <input type="button" class="num" name="btn6" value="6" 
-                onclick="displaynum(btn6.value)">
-                <input type="button"  class="operat" name="btnSub"value="-" 
-                onclick="displaynum(btnSub.value)"></br>
+                <input type="button"  class="num" value="4" 
+                onclick="displaynum('4')">
+                <input type="button" class="num" value="5" 
+                onclick="displaynum('5')">
+                <input type="button" class="num" value="6" 
+                onclick="displaynum('6')">
+                <input type="button"  class="operat" value="-" 
+                onclick="displaynum('-')"></br>
 
-                <input type="button" class="num" name="btn3" value="3" 
-                onclick="displaynum(btn3.value)">
-                <input type="button"  class="num" name="btn2"value="2" 
-                onclick="displaynum(btn2.value)">
-                <input type="button" class="num" name="btn1" value="1" 
-                onclick="displaynum(btn1.value)">
-                <input type="button"  class="operat" name="btnAdd"value="+" 
-                onclick="displaynum(btnAdd.value)"></br>
+                <input type="button" class="num" value="3" 
+                onclick="displaynum('3')">
+                <input type="button"  class="num" value="2" 
+                onclick="displaynum('2')">
+                <input type="button" class="num" value="1" 
+                onclick="displaynum('1')">
+                <input type="button"  class="operat" value="+" 
+                onclick="displaynum('+')"></br>
 
-                <input type="button" class="num" name="btnDot" value="." 
-                onclick="displaynum(btnDot.value)">
-                <input type="button"  class="num" name="btn0"value="0" 
-                onclick="displaynum(btn0.value)">
-                <input type="button" class="operat1" name="btnEql" value="=" 
-                onclick="display.value=eval(display.value)">
+                <input type="button" class="num" value="." 
+                onclick="displaynum('.')">
+                <input type="button"  class="num" value="0" 
+                onclick="displaynum('0')">
+                <input type="button" class="operat1" value="=" 
+                onclick="calculate()">
             </div>
         </form>
 </div>
